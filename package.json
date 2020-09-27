@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^8.4.3",
     "expo": "~39.0.2",
     "expo-splash-screen": "~0.6.0",
     "expo-status-bar": "~1.0.2",
@@ -15,6 +16,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.2",
+    "react-native-fcm": "^16.2.4",
     "react-native-gesture-handler": "~1.7.0",
     "react-native-reanimated": "~1.13.0",
     "react-native-screens": "~2.10.1",

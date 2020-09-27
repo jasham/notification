@@ -9,6 +9,9 @@ import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 import expo.modules.splashscreen.SplashScreen;
 import expo.modules.splashscreen.SplashScreenImageResizeMode;
+import android.content.Intent;
+
+
 
 public class MainActivity extends ReactActivity {
   @Override
@@ -19,6 +22,11 @@ public class MainActivity extends ReactActivity {
     SplashScreen.show(this, SplashScreenImageResizeMode.CONTAIN, ReactRootView.class, false);
   }
 
+    @Override
+    public void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+    }
 
     /**
      * Returns the name of the main component registered from JavaScript.
